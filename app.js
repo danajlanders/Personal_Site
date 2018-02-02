@@ -7,7 +7,7 @@ app.config(function($routeProvider,$locationProvider){
         controller: 'mainCtrl',
         templateUrl: 'views/main/main.html'
     })
-    .when('/views', {
+    .when('/about', {
         controller: 'aboutCtrl',
         templateUrl: 'views/about/about.html'
     })
@@ -18,10 +18,6 @@ app.config(function($routeProvider,$locationProvider){
     .when('/contact', {
         controller: 'contactCtrl',
         templateUrl: 'views/contact/contact.html'
-    })
-    .otherwise('/main', {
-        controller: 'mainCtrl',
-        templateUrl: 'views/main/main.html'
     });
 
     $locationProvider.hashPrefix('');
